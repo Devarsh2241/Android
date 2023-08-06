@@ -1,0 +1,114 @@
+package com.dcoder.task_1;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText name,surname,result;
+    Button concat,count,red,blue,green,yellow,clear;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        name=findViewById(R.id.name);
+        surname=findViewById(R.id.surname);
+        concat=findViewById(R.id.concat);
+        count=findViewById(R.id.count);
+        red=findViewById(R.id.red);
+        blue=findViewById(R.id.blue);
+        green=findViewById(R.id.green);
+        yellow=findViewById(R.id.yellow);
+        result=findViewById(R.id.result);
+        clear=findViewById(R.id.clear);
+
+        concat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fname,lname,fullname;
+                fname=name.getText().toString();
+                lname=surname.getText().toString();
+                fullname=fname+" "+lname;
+                Toast.makeText(MainActivity.this,fullname,Toast.LENGTH_SHORT).show();
+            }
+        });
+        count.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fname,lname;
+                fname=name.getText().toString();
+                lname=surname.getText().toString();
+                int f=fname.length();
+                int l=lname.length();
+                Toast.makeText(MainActivity.this,fname+":"+f,Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,lname+":"+l,Toast.LENGTH_SHORT).show();
+            }
+        });
+        red.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fname,lname,fullname;
+
+                fname=name.getText().toString();
+                lname=surname.getText().toString();
+                fullname=fname+" "+lname;
+                result.setText(fullname);
+                result.setTextColor(Color.RED);
+            }
+        });
+        blue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fname,lname,fullname;
+
+                fname=name.getText().toString();
+                lname=surname.getText().toString();
+                fullname=fname+" "+lname;
+                result.setText(fullname);
+                result.setTextColor(Color.BLUE);
+            }
+        });
+        green.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fname,lname,fullname;
+
+                fname=name.getText().toString();
+                lname=surname.getText().toString();
+                fullname=fname+" "+lname;
+                result.setText(fullname);
+                result.setTextColor(Color.GREEN);
+            }
+        });
+        yellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fname,lname,fullname;
+
+                fname=name.getText().toString();
+                lname=surname.getText().toString();
+                fullname=fname+" "+lname;
+                result.setText(fullname);
+                result.setTextColor(Color.YELLOW);
+            }
+        });
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                name.setText("");
+                surname.setText("");
+                result.setText("");
+            }
+        });
+
+    }
+}
