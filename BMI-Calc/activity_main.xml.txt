@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/linearlayout1"
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Height in Foot"
+        android:textColor="@color/sky"
+        android:ems="10"
+        android:id="@+id/ehf"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Height in Inch"
+        android:textColor="@color/sky"
+        android:ems="10"
+        android:id="@+id/ehi"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Weight in KG"
+        android:textColor="@color/sky"
+        android:ems="10"
+        android:id="@+id/ew"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calc"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/sky"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:hint="Calculate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Result !!"
+        android:id="@+id/result"
+        />
+
+</LinearLayout>
