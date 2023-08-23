@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/green"
+        android:textColor="@color/red"
         android:background="@color/black"/>
 
     <GridLayout
@@ -33,7 +33,7 @@
         <Button
             android:id="@+id/btn1"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -41,7 +41,7 @@
             android:id="@+id/btn2"
             android:layout_marginLeft="10dp"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -49,14 +49,14 @@
             android:id="@+id/btn3"
             android:layout_marginLeft="10dp"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
         <Button
             android:id="@+id/btn4"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -64,7 +64,7 @@
             android:id="@+id/btn5"
             android:layout_marginLeft="10dp"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -72,14 +72,14 @@
             android:id="@+id/btn6"
             android:layout_marginLeft="10dp"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
         <Button
             android:id="@+id/btn7"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -87,7 +87,7 @@
             android:id="@+id/btn8"
             android:layout_marginLeft="10dp"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -95,7 +95,7 @@
             android:id="@+id/btn9"
             android:layout_marginLeft="10dp"
             android:onClick="check"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textSize="30dp"
             android:backgroundTint="@color/gray"
             />
@@ -112,7 +112,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Result"
-        android:textColor="@color/green"
+        android:textColor="@color/red"
         android:layout_marginTop="100dp"
         android:textSize="50dp"
         android:gravity="center"/>

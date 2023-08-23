@@ -36,14 +36,16 @@ public class MainActivity extends AppCompatActivity {
         }
         public void check (View view){
             Button btn = (Button) view;
-            btn.setEnabled(false);
             count++;
             if (flag == 0) {
                 btn.setText("X");
+                btn.setEnabled(false);
                 flag = 1;
+
           }
             else{
                 btn.setText("0");
+                btn.setEnabled(false);
                 flag=0;
             }
             if(count>4){
@@ -108,6 +110,17 @@ public class MainActivity extends AppCompatActivity {
             btn7.setText("");
             btn8.setText("");
             btn9.setText("");
+
+            btn1.setEnabled(true);
+            btn2.setEnabled(true);
+            btn3.setEnabled(true);
+            btn4.setEnabled(true);
+            btn5.setEnabled(true);
+            btn6.setEnabled(true);
+            btn7.setEnabled(true);
+            btn8.setEnabled(true);
+            btn9.setEnabled(true);
+
 
 
         }
