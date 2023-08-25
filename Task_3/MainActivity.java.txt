@@ -1,0 +1,45 @@
+package com.dcoder.task_3;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    Spinner s1,s2;
+    Button submit;
+
+    String[] location={"Noida","Gurugaon","Pune","Ahmedabad"};
+    String[] job={"Asp.NET","PHP","Machine Learning","App Development"};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        s1=findViewById(R.id.s1);
+        s2=findViewById(R.id.s2);
+        submit=findViewById(R.id.submit);
+
+        ArrayAdapter adp1=new ArrayAdapter(this, android.R.layout.simple_spinner_item,job);
+        s1.setAdapter(adp1);
+
+        ArrayAdapter adp2=new ArrayAdapter(this,android.R.layout.simple_spinner_item,location);
+        s2.setAdapter(adp2);
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String job=s1.getSelectedItem().toString();
+                String location=s2.getSelectedItem().toString();
+                Toast.makeText(MainActivity.this,"Job : "+job+" Location : "+location,Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+}

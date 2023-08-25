@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Workshop"
+        android:textSize="40dp"
+        android:layout_margin="50dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c1"
+       android:layout_margin="50dp"
+        android:text="Android"
+        android:textSize="35dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-20dp"
+        android:text="Python"
+        android:textSize="35dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Internet Of Things"
+        android:textSize="35dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Cross Plstform App"
+        android:textSize="35dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnresult"
+        android:text="Let's Go"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="35dp"
+    android:hint="Result"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="100dp"
+    android:id="@+id/result"
+    />
+</LinearLayout>
